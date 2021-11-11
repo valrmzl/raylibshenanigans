@@ -13,8 +13,12 @@ int main(void)
     //--------------------------------------------------------------------------------------
 
     // Main game loop
+    int x =0;
+    int y =0;
     while (!WindowShouldClose())    // Detect window close button or ESC key
     {
+      x++;
+      y++;
         // Update
         //----------------------------------------------------------------------------------
         // TODO: Update your variables here
@@ -23,6 +27,7 @@ int main(void)
         // Draw
         //----------------------------------------------------------------------------------
         BeginDrawing();
+      DrawRectangle(x, y, 50, 50, BLACK);
 
         ClearBackground(RAYWHITE);
 
